@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authorization_Code">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="69dp"
+        android:gravity="center"
+        android:text="Введите код из полученного СМС сообщения"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="98dp"
+        android:gravity="center"
+        android:hint="@string/register_hint_default_code"
+        android:inputType="phone"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button_submit_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_submit_code"
+        android:layout_width="168dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="193dp"
+        android:onClick="OnClickCode"
+        android:text="@string/button_forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCode" />
+</androidx.constraintlayout.widget.ConstraintLayout>

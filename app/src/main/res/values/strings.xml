@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BikeSharing</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="gps_allow">Для корректной работы приложения необходимо предоставить доступ к геолокации и включить GPS-навигацию</string>
+    <string name="button_forward">Далее</string>
+    <string name="enter_number">Введите ваш номер телефона</string>
+    <string name="register_hint_default_code">- - - - - -</string>
+</resources>

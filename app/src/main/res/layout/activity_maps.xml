@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.commonutils.MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="562dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/button_qr_code"
+            android:layout_width="74dp"
+            android:layout_height="75dp"
+            android:onClick="OnClickQR"
+            android:src="@drawable/qr_code" />
+        android:text="QR" />
+    </LinearLayout>
+</RelativeLayout>
